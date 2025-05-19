@@ -29,12 +29,43 @@ GET /api/export/standard
 
 | Parameter       | Type     | Required | Description |
 |----------------|----------|----------|-------------|
+| `user_id`       | integer  | ✅ Yes   | The unique ID of the user requesting the export. |
 | `format`        | string   | ✅ Yes   | The export format. Allowed values: `json`, `xml`, `csv`. |
-| `types`         | array    | ❌ No    | List of type IDs to filter by. Allowed values: `1` to `9`. |
+| `types`         | array    | ❌ No    | List of type IDs to filter by. See list of available types below. |
 | `published`     | boolean  | ❌ No    | Filter by published status. Use `1` for published, `0` for unpublished. |
 | `sold`          | boolean  | ❌ No    | Filter by sold status. Use `1` for sold, `0` for unsold. |
-| `conditions`    | array    | ❌ No    | Filter by item condition. Allowed values: `47603`, `10425`, `10426`, `10427`, `10428`, `10429`, `10430`. |
+| `conditions`    | array    | ❌ No    | Filter by item condition. See list of available conditions below. |
 | `token`         | string   | ✅ Yes   | Your API token for authentication and rate limiting. |
+
+---
+
+## 🚗 Vehicle Types
+
+| ID  | Label               |
+|-----|---------------------|
+| 1   | Cars & Trucks       |
+| 2   | Commercial Trucks   |
+| 3   | Motorcycles         |
+| 4   | Power Boats         |
+| 5   | RVs & Campers       |
+| 6   | Sail Boats          |
+| 7   | Trailers            |
+| 8   | ATV/Golf-Cart       |
+| 9   | Vans                |
+
+---
+
+## 📦 Conditions
+
+| ID     | Label                        |
+|--------|------------------------------|
+| 47603  | Certified Pre-Owned          |
+| 10425  | New                          |
+| 10426  | Used                         |
+| 10427  | Traded                       |
+| 10428  | Consignment                  |
+| 10429  | Demo                         |
+| 10430  | Used w/ New Conversion       |
 
 ---
 
