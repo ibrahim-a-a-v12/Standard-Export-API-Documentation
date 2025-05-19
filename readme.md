@@ -72,7 +72,7 @@ GET https://export.autodealersdigital.com/api/export/standard
 ## 🧪 Example Request
 
 ```
-GET https://export.autodealersdigital.com/api/export/standard?format=xml&published=1&token=36Z9QQbUe6Xx9YGk7mvGGOLAKMdYBrMUF2I8eOyESWGcJsr5w6mV
+GET https://export.autodealersdigital.com/api/export/standard?format=xml&published=1&token=YOUR_UNIQUE_TOKEN
 ```
 
 Optional with more filters:
