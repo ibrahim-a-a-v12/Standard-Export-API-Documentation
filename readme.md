@@ -72,11 +72,11 @@ GET /api/export/standard
 ## 🧪 Example Request
 
 ```
-GET http://localhost:82/api/export/standard?user_id=123&format=xml&published=1&token=36Z9QQbUe6Xx9YGk7mvGGOLAKMdYBrMUF2I8eOyESWGcJsr5w6mV
+GET http://localhost:82/api/export/standard?format=xml&published=1&token=36Z9QQbUe6Xx9YGk7mvGGOLAKMdYBrMUF2I8eOyESWGcJsr5w6mV
 ```
 
 Optional with more filters:
 
 ```
-GET http://localhost:82/api/export/standard?user_id=123&format=json&types[]=1&types[]=2&conditions[]=10425&published=1&token=YOUR_UNIQUE_TOKEN
+GET http://localhost:82/api/export/standard?format=json&types[]=1&types[]=2&conditions[]=10425&published=1&token=YOUR_UNIQUE_TOKEN
 ```
