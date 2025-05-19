@@ -29,7 +29,6 @@ GET https://export.autodealersdigital.com/api/export/standard
 
 | Parameter       | Type     | Required | Description |
 |----------------|----------|----------|-------------|
-| `user_id`       | integer  | ✅ Yes   | The unique ID of the user requesting the export. |
 | `format`        | string   | ✅ Yes   | The export format. Allowed values: `json`, `xml`, `csv`. |
 | `types`         | array    | ❌ No    | List of type IDs to filter by. See list of available types below. |
 | `published`     | boolean  | ❌ No    | Filter by published status. Use `1` for published, `0` for unpublished. |
